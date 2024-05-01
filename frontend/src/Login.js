@@ -1,19 +1,20 @@
 import React from 'react'
+import styles from './styles.module.css'
 
 function Login() {
   return (
-    <div>
-      <div>
+    <div className={styles.custom_div}>
+      <div className={styles.box_input}>
         <form>
-          <div>
-            <label htmlFor='email'>Email</label> 
-            <input type='email' placeholder='Enter E-mail'></input>
+          <div className={styles.form}>
+            <label htmlFor='email'>Email:</label> 
+            <input type='email' placeholder='Enter E-mail' className={styles.input}></input>
           </div>
-          <div>
-            <label htmlFor='password'>Password</label>
-            <input type='password' placeholder='Enter Password'></input>
+          <div className={styles.form}>
+            <label htmlFor='password'>Password:</label>
+            <input type='password' placeholder='Enter Password' className={styles.input}></input>
           </div>
-          <button className=''>Login</button>
+          <button className={styles.btn}>Login</button>
         </form>
       </div>
 

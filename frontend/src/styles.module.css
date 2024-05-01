@@ -1,0 +1,42 @@
+body  {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+.custom_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6cdd4;
+  height: 100vh;
+
+}
+
+.box_input {
+  padding: 0.75rem;
+  background-color: rgb(50, 142, 234); 
+  width: 20%;
+  height: 30%;
+}
+
+.form {
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.input {
+  border-radius: 10%;
+  border: 2px solid black;
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+.btn {
+  background-color: crimson;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
