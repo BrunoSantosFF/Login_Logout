@@ -15,6 +15,19 @@ const db = mysql.createConnection(
   }
 )
 
+app.post('/login', (resquest, response) => {
+  const sql = "select * from login where username = ? and password = ?";
+  const values = [
+    req.body.email,
+    req.body.password,
+  ]
+
+  db.query(sql, [values], (err,data) => {
+    if(err) return response.json("Login Failed");
+    return response.json(data);
+  })
+})
+
 app.listen(3000, () => {
   console.log("Listening ...");
 })
